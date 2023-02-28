@@ -1,9 +1,7 @@
 public class MethodTwo implements MethodsClass {
     protected int oCount = 0;
     protected int nCount = 0;
-    public MethodTwo(){
-
-    }
+    public MethodTwo(){}
 
     @Override
     public boolean Method(String input) {
@@ -13,6 +11,7 @@ public class MethodTwo implements MethodsClass {
                 return false;
 
             }
+            // 3n/2
             oCount += 5;
             nCount ++;
         }

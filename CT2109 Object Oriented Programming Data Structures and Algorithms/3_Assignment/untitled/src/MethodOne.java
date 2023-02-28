@@ -7,15 +7,16 @@ public class MethodOne implements MethodsClass {
     }
     @Override
     public boolean Method(String input){
-        String reverseString = "";
-        oCount += 1;
-        for(int i = input.length()-1; i > -1; i--){
-            reverseString += input.charAt(i);
-            oCount+=4;
-            nCount ++;
+        String reverseString = ""; // 1
+        oCount += 1; // 1
+        for(int i = input.length()-1; i > -1; i--){ // 3n - 1
+            reverseString += input.charAt(i); // 1n
+            oCount+=4; // 3n + 1n
+            nCount ++; // O(n)
         }
         oCount++;
         return reverseString.equals(input);
+        //
     }
     public int get_oCount(){
         return this.oCount;

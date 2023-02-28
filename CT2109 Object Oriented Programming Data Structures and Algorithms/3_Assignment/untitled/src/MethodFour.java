@@ -10,17 +10,16 @@ public class MethodFour implements MethodsClass{
         String reversedStr = reverse(input);
         return input.equals(reversedStr);
     }
+
     public static String reverse(String input){
-        // base case
-        // if input length is 1, then return the string
-        // if input is empty return the string
         if (input.isEmpty() || input.length() == 1) {
             return input;
         }
 
-        String reversedSubstring = reverse(input.substring(1));
-        oCount ++;
-        return reversedSubstring + input.charAt(0);
+        StringBuilder reversedSubstring = new StringBuilder(reverse(input.substring(1)));
+        reversedSubstring.append(input.charAt(0));
+        return reversedSubstring.toString();
+        // O(n)
     }
 
     @Override

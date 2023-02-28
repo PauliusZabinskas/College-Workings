@@ -1,17 +1,37 @@
-public class Main {
+import java.util.Scanner;
 
-    int operationCount = 0;
+public class App {
 
-    public static void main(String[] args) {
+    static int defaultIterations;
+    public App(){
+
+    }
+
+    public void build(){
         MethodsClass methodOne = new MethodOne();
         MethodsClass methodTwo = new MethodTwo();
         MethodsClass methodThree = new MethodThree();
         MethodsClass methodFour = new MethodFour();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\nEnter Number Of Iterations For Test Or Enter 0 For Default Setting");
 
-        System.out.println("\nMethod One: ");test(methodOne);
-        System.out.println("\nMethod Two: ");test(methodTwo);
-        System.out.println("\nMethod Three: ");test(methodThree);
-        System.out.println("\nMethod Four: ");test(methodFour);
+        while (!sc.hasNextInt()){
+            System.out.println("is not int");
+            sc = new Scanner(System.in);
+        }
+        int testTimes = sc.nextInt();
+
+
+        System.out.println("\nMethod One: ");test(methodOne, testTimes);
+        System.out.println("\nMethod Two: ");test(methodTwo, testTimes);
+        System.out.println("\nMethod Three: ");test(methodThree, testTimes);
+        System.out.println("\nMethod Four: ");test(methodFour, testTimes);
+    }
+
+
+    public static void main(String[] args) {
+        App app = new App();
+        app.build();
 
     }
 
@@ -34,10 +54,15 @@ public class Main {
         return binary.toString();
     }
 
-    public static void test(MethodsClass method){
-        int count= 0;
+    public static void test(MethodsClass method, int testTimes){
+        defaultIterations = 1000000;
+        if(testTimes == 0){
+            testTimes = defaultIterations;
+        }
+
+        int count = 0;
         long start = System.currentTimeMillis();
-        for(int i =0; i< 1000000; i++){
+        for(int i = 0; i< testTimes; i++){
 
             String j = Integer.toString(i);
 
@@ -54,7 +79,7 @@ public class Main {
         count = 0;
 
         start = System.currentTimeMillis();
-        for(int i = 0; i<= 1000000; i++ ){
+        for(int i = 0; i<= testTimes; i++ ){
 
             String j = Integer.toString(i);
 
@@ -69,8 +94,5 @@ public class Main {
         System.out.println("\tOperation Count: "+ method.get_oCount());
         System.out.println("\tO(n) Count: "+ method.getNCount() );
     }
-
-
-
 }
 
