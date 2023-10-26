@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "e94fedb412a19b40",
+        "id": "9b6d5f15bc2c8ede",
         "type": "tabs",
         "children": [
           {
-            "id": "037595de7e8579c3",
+            "id": "1e37a29dfd7ba5c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year 3 Lectures/Programing III/Object serialisation/Object serialization.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7431e6660daf6788",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 3 Lectures/Database/B Trees/B Trees.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f371a4748f1cbb67",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 3 Lectures/Networking/assessment 1 Router commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bb2868841c1f62b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year 3 Lectures/Programing III/Notes & slides/Week 1/Command line Java.md",
+                "file": "Year 3/Software Engineering/Assignemnt 4/Documentation of steps taken.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year 3 Lectures/Programing III/Notes & slides/Week 1/Command line Java.md",
+                "file": "Year 3/Software Engineering/Assignemnt 4/Documentation of steps taken.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Year 3 Lectures/Programing III/Notes & slides/Week 1/Command line Java.md",
+                "file": "Year 3/Software Engineering/Assignemnt 4/Documentation of steps taken.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Year 3 Lectures/Programing III/Notes & slides/Week 1/Command line Java.md"
+                "file": "Year 3/Software Engineering/Assignemnt 4/Documentation of steps taken.md"
               }
             }
           },
@@ -195,19 +158,26 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "bb2868841c1f62b5",
+  "active": "1e37a29dfd7ba5c0",
   "lastOpenFiles": [
-    "Year 3 Lectures/Programing III/Assignment 3/untitled1/target/test-classes/org/example/MainTest.class",
-    "Year 3 Lectures/Programing III/Assignment 3/untitled1/target/test-classes/org/example",
-    "Year 3 Lectures/Programing III/Assignment 3/untitled1/target/test-classes/org",
-    "Year 3 Lectures/Programing III/Assignment 3/untitled1/target/classes/org/example/Player.class",
-    "Year 3 Lectures/Programing III/Assignment 3/untitled1/target/classes/org/example/Achievement.class",
-    "Year 3 Lectures/Programing III/Assignment 3/untitled1/player.ser",
-    "Year 3 Lectures/Programing III/Assignment 3/untitled1/target/test-classes",
-    "Year 3 Lectures/Programing III/Assignment 3/untitled1/target/generated-test-sources/test-annotations",
-    "Year 3 Lectures/Programing III/Assignment 3/untitled1/target/generated-test-sources",
-    "Year 3 Lectures/Programing III/Assignment 3/untitled1/target/classes/org/example/Main.class",
-    "Year 3 Lectures/Programing III/Assignment 3/untitled1/target/classes/org/example/Country.class",
+    "Year 3/Software Engineering/Assignemnt 4/createDB.sql",
+    "Year 3/Software Engineering/Assignemnt 4/Unconfirmed 369904.crdownload",
+    "Year 3/Software Engineering/Assignemnt 4/Pasted image 20231026121300.png",
+    "Year 3/Software Engineering/Assignemnt 4/4 JPA.pdf",
+    "Year 3/Software Engineering/Assignemnt 4/Unconfirmed 867598.crdownload",
+    "Year 3/Software Engineering/Assignemnt 4/Pasted image 20231026120759.png",
+    "Year 3/Software Engineering/Assignemnt 4/Pasted image 20231026120731.png",
+    "Year 3/Software Engineering/Assignemnt 4/Pasted image 20231026120013.png",
+    "Year 3/Software Engineering/Assignemnt 4/Documentation of steps taken.md",
+    "Docker & Kubernetes/Untitled.canvas",
+    "Docker & Kubernetes/Docker Note Summary.md",
+    "Year 3/Programming Paradigms/Assignment 1/Unconfirmed 963936.crdownload",
+    "Year 3/Programming Paradigms/Assignment 1/Q1 - Copy (3)",
+    "Year 3/Programming Paradigms/Assignment 1/Q1 - Copy (2)",
+    "Year 3/Programming Paradigms/Assignment 1/Q1 - Copy",
+    "Year 3/Programming Paradigms/Assignment 1/Q1",
+    "Year 3/Programming Paradigms/Assignment 1/New folder",
+    "Year 3/Programming Paradigms/Assignment 1/CT331 Assignment 1 Paulius Zabinskas.pdf",
     "Year 3 Lectures/Programing III/Object serialisation/Object serialization.md",
     "Year 3 Lectures/Programing III/Notes & slides/Week 1/Command line Java.md",
     "Year 3 Lectures/Networking/Paulius_Zabinkas/trace ping in the same Vlan.png",
@@ -216,10 +186,6 @@
     "Year 3 Lectures/Networking/Paulius_Zabinkas/package capture from different VLANS.png",
     "Year 3 Lectures/Networking/Paulius_Zabinkas/GNS3 simulation map.png",
     "Year 3 Lectures/Networking/Paulius_Zabinkas/Export Command results for router.png",
-    "Year 3 Lectures/Networking/Paulius_Zabinkas/Assignment 1.png",
-    "Year 3 Lectures/Networking/Paulius_Zabinkas/trace ping to diffrent VLAN.png",
-    "Year 3 Lectures/Networking/GNS3 simulation map.png",
-    "Year 3 Lectures/Networking/Switch Config.png",
     "Year 3 Lectures/Database/B Trees/B Trees.md",
     "Year 3 Lectures/Networking/assessment 1 Router commands.md",
     "Year 3 Lectures/Programing III/Object serialisation/Steps carried out.md",
@@ -241,8 +207,6 @@
     "Excalidraw/Drawing 2023-10-02 21.20.42.excalidraw.md",
     "Year 3 Lectures/Database/Concepts/Drawing 2023-10-04 14.00.08.excalidraw.md",
     "LeetCodeProbmels/Two Sums/Big O(n).md",
-    "LeetCodeProbmels/Two Sums/Big O(n^2).md",
-    "LeetCodeProbmels/HashMap.md",
     "Untitled.canvas"
   ]
 }
