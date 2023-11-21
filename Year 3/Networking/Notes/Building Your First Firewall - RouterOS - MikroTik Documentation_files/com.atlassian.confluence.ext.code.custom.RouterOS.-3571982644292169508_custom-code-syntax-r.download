@@ -1,0 +1,73 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'com.atlassian.confluence.ext.code.custom.RouterOS.-3571982644292169508:custom-code-syntax-resources', location = '/javascript/shLang.js' */
+/**
+ * do not use keywords
+ * TODO fix:
+ * * :while ([/interface ethernet find] = "") do={}
+ */
+
+SyntaxHighlighter.brushes.RouterOS = function()
+{
+  var operators   = 'all and or in'
+
+  var cmds = "reset|reset-configuration|set|unset|reset|edit|disable|enable|add|remove|move|return|delay|do|error|execute|find|for|foreach|global|if|len|local|nothing|parse|pick|put|resolve|set|time|toarray|tobool|toid|toip|toip6|tonum|tostr|totime|typeof|while|beep|export|import|led|password|ping|quit|redo|setup|undo|print|detail|file|log|info|get|warning|critical|send|comment|monitor|install|upgrade|scan|frequency-scan|frequency-monitor|wps-push-button|wps-client|country-info|hw-info|setup-repeater|provision|set-identity"
+  this.regexList = [
+    {
+      regex: /#.*$/gm,
+      css: 'comments'
+    },
+
+    // double quoted strings
+    {
+      regex: SyntaxHighlighter.regexLib.doubleQuotedString,
+      css: 'string'
+    },
+
+    // match variable reference with $
+    {
+      regex: /(\$)\w+/g,
+      css: 'keyword'
+    },
+
+    // match menu until command found
+    {
+      regex: new RegExp("[\\\/:].*?(?=(" + cmds + "|$)(?=\\s|$))", "gm"),
+      css: 'constants'
+    },
+
+    // match Property name
+    {
+      regex: /\b[\w.-]+?(?=(=))\b/g,
+      css: 'value'
+    },
+
+    // match property value
+    {
+      regex: /=.*?(?=(\s|$|\t|"|{|;|<|>))/g,
+      css: 'plain' // value plain
+    },
+
+
+    // match IP subnets
+    {
+      regex: /((\d){1,3}\.){3}(\d){1,3}\/(\d){1,3}/gm,
+      css: "color1"
+    },
+
+    // match commands
+    {
+      regex: new RegExp("\\b(" + cmds + ")( |$|\\t)", "g"),
+      css: 'functions'
+    },
+
+    // operators
+    { regex: new RegExp(this.getKeywords(operators), 'g'),       css: 'variable' },
+  ]
+}
+
+SyntaxHighlighter.brushes.RouterOS.prototype    = new SyntaxHighlighter.Highlighter();
+SyntaxHighlighter.brushes.RouterOS.aliases      = ['ros'];
+
+}catch(e){WRMCB(e)};

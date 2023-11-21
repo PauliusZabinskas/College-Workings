@@ -1,0 +1,25 @@
+IP Pool Creation:
+
+add name=dhcp_pool0 ranges=192.168.100.2-192.168.100.254;
+This command creates a DHCP pool named dhcp_pool0 with a range of IP addresses from 192.168.100.2 to 192.168.100.254.
+DHCP Server Setup:
+
+add address-pool=dhcp_pool0 disabled=no interface=ether4 name=dhcp1;
+This sets up a DHCP server named dhcp1 on ether4 using the IP pool dhcp_pool0.
+OSPF (Open Shortest Path First) Configuration:
+
+There are several commands here that configure OSPF, an interior gateway protocol used for routing within larger autonomous systems.
+IP Address Assignment:
+
+add address=192.168.100.1/24 interface=ether4 network=192.168.100.0;
+add address=10.0.1.1/24 interface=ether2 network=10.0.1.0;
+add address=10.0.3.1/24 interface=ether3 network=10.0.3.0;
+These commands assign IP addresses to ether4, ether2, and ether3 interfaces.
+DHCP Server Network Configuration:
+
+add address=192.168.100.0/24 dns-server=8.8.8.8 gateway=192.168.100.1;
+This configures network settings for the DHCP server, setting a DNS server and gateway.
+Router Identity Setting:
+
+set name=EngBuilding;
+Sets the identity of the router to EngBuilding.
